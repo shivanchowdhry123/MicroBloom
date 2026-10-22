@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MicroBloom | Precision Plant Care for Urban Homes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-emerald-500 selection:text-white">
+
+  <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-emerald-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white shadow-lg shadow-emerald-900/30">
+          <i class="fa-solid fa-leaf text-xl"></i>
+        </div>
+        <span class="text-xl font-extrabold tracking-wider text-white">MICROBLOOM</span>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+        <a href="#how-it-works" class="hover:text-emerald-400 transition-colors">How It Works</a>
+        <a href="#calculator" class="hover:text-emerald-400 transition-colors">Plant Feed Calculator</a>
+        <a href="#products" class="hover:text-emerald-400 transition-colors">Products</a>
+        <a href="#reviews" class="hover:text-emerald-400 transition-colors">Reviews</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="#products" class="hidden sm:inline-block px-5 py-2.5 rounded-full bg-emerald-600 text-white font-bold text-sm shadow-lg shadow-emerald-700/30 hover:bg-emerald-500 transition-all">
+          Order Trial Pack
+        </a>
+        <button id="cart-btn" class="relative p-2.5 rounded-xl bg-slate-800 border border-slate-700 hover:bg-slate-700 text-white transition-colors">
+          <i class="fa-solid fa-cart-shopping text-lg"></i>
+          <span id="cart-count" class="absolute -top-1.5 -right-1.5 bg-emerald-500 text-slate-950 font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-slate-900 via-emerald-950/20 to-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-900/50 border border-emerald-600/30 text-emerald-300 text-xs font-semibold mb-6">
+          <i class="fa-solid fa-sparkles"></i>
+          Urban Gardening Simplified
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+          One Pod. One Liter. <br>
+          <span class="text-emerald-400">Zero Hassle.</span>
+        </h1>
+        <p class="text-lg text-slate-300 max-w-xl mb-8 leading-relaxed">
+          Pre-measured, water-soluble micro-sachets carrying precise NPK, micronutrient, and organic bio-stimulant formulations tailored for urban container gardens.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-10">
+          <a href="#products" class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-base shadow-xl shadow-emerald-900/40 transition-all gap-3">
+            <span>Get Starter Pack @ ₹49</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#calculator" class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold text-base transition-all">
+            Calculate Plant Feed
+          </a>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-800 text-left">
+          <div>
+            <p class="text-2xl font-extrabold text-white">100%</p>
+            <p class="text-xs text-slate-400 mt-1">Water Soluble</p>
+          </div>
+          <div>
+            <p class="text-2xl font-extrabold text-emerald-400">0%</p>
+            <p class="text-xs text-slate-400 mt-1">Foul Odor</p>
+          </div>
+          <div>
+            <p class="text-2xl font-extrabold text-white">75%</p>
+            <p class="text-xs text-slate-400 mt-1">Gross Margin Product</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="relative mx-auto max-w-md rounded-2xl overflow-hidden shadow-2xl border border-emerald-900/50 group">
+          <img src="https://www.lightxeditor.com/blog/wp-content/uploads/2026/08/ChatGPT-Image-Aug-12-2026-07_21_07-PM-1568x784.webp" alt="MicroBloom Packaging" class="w-full h-[400px] object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur border border-slate-700">
+            <p class="text-xs text-emerald-400 font-bold uppercase tracking-wider">Moisture-Proof Micro-Sachets</p>
+            <p class="text-sm font-semibold text-white mt-1">Dissolves in under 30 seconds in 1 liter of tap water.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculator" class="py-16 bg-slate-800/50 border-y border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest">Interactive Tool</span>
+        <h2 class="text-3xl font-extrabold text-white mt-2">Plant Feed Dosage Calculator</h2>
+        <p class="text-slate-400 text-sm mt-2">Find out how many sachets you need per month based on your balcony or indoor garden setup.</p>
+      </div>
+
+      <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 shadow-xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-6">
+            <div>
+              <label for="plant-count" class="block text-sm font-semibold text-slate-200 mb-2">Number of Potted Plants:</label>
+              <input type="range" id="plant-count" min="1" max="50" value="10" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-emerald-500">
+              <div class="flex justify-between text-xs text-slate-400 mt-2">
+                <span>1 Plant</span>
+                <span id="plant-count-val" class="text-emerald-400 font-extrabold text-base">10 Plants</span>
+                <span>50 Plants</span>
+              </div>
+            </div>
+
+            <div>
+              <label for="feed-freq" class="block text-sm font-semibold text-slate-200 mb-2">Feeding Frequency:</label>
+              <select id="feed-freq" class="w-full bg-slate-800 border border-slate-700 rounded-xl py-3 px-4 text-slate-100 focus:outline-none focus:border-emerald-500 text-sm">
+                <option value="14">Every 2 Weeks (Recommended)</option>
+                <option value="7">Every Week (Active Growth)</option>
+                <option value="30">Once a Month (Maintenance)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="bg-emerald-950/40 border border-emerald-800/60 p-6 rounded-xl text-center flex flex-col justify-center h-full">
+            <p class="text-xs text-emerald-300 font-semibold uppercase tracking-wider">Estimated Monthly Needs</p>
+            <p id="sachet-needs" class="text-4xl font-extrabold text-white my-3">2 Sachets <span class="text-lg font-normal text-slate-400">/ mo</span></p>
+            <p class="text-xs text-slate-400 mb-4">1 Box of 10 sachets lasts <span id="box-duration" class="text-emerald-400 font-bold">5 months</span> for your plants.</p>
+            <button onclick="showNotAvailableModal('Subscriber Box (25 Sachets)')" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all shadow-md">
+              Add Ideal Supply to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest">Product Lineup</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Choose Your MicroBloom Pack</h2>
+        <p class="text-slate-400 mt-3 text-sm">Hermetically sealed, odor-free, single-dose pods designed for urban balconies and office desks.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden flex flex-col justify-between hover:border-emerald-500/50 transition-all">
+          <div class="p-6">
+            <span class="inline-block px-3 py-1 rounded-full bg-slate-700 text-slate-300 font-semibold text-xs mb-4">Starter Pack</span>
+            <h3 class="text-2xl font-bold text-white mb-2">Retail Pack (10 Sachets)</h3>
+            <p class="text-slate-400 text-sm mb-6">Perfect for beginners and balcony setups with 3 to 10 pots.</p>
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="text-4xl font-extrabold text-white">₹49</span>
+              <span class="text-xs text-slate-400">₹4.90 / sachet</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 10x Hermetic 3g sachets</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Balanced NPK 19:19:19 + Seaweed</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Zero chemical root burns</li>
+            </ul>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="showNotAvailableModal('Retail Pack (10 Sachets)')" class="w-full py-3 rounded-xl bg-slate-700 hover:bg-slate-600 text-white font-bold text-sm transition-all">
+              Buy Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 (Popular) -->
+        <div class="bg-slate-800 rounded-2xl border-2 border-emerald-500 relative overflow-hidden flex flex-col justify-between shadow-2xl shadow-emerald-950/50">
+          <div class="bg-emerald-500 text-slate-950 text-center py-1.5 font-bold text-xs uppercase tracking-wider">
+            Best Value • Most Popular
+          </div>
+          <div class="p-6">
+            <span class="inline-block px-3 py-1 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-300 font-semibold text-xs mb-4">Quarterly Care</span>
+            <h3 class="text-2xl font-bold text-white mb-2">Subscriber Box (25 Sachets)</h3>
+            <p class="text-slate-400 text-sm mb-6">Complete 6-month plant care for medium urban balcony gardens.</p>
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="text-4xl font-extrabold text-white">₹99</span>
+              <span class="text-xs text-emerald-400 font-bold">Save 20%</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 25x Hermetic 3g sachets</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Free Doorstep Express Delivery</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Free Plant Care Guide Included</li>
+            </ul>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="showNotAvailableModal('Subscriber Box (25 Sachets)')" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all shadow-lg shadow-emerald-900/40">
+              Order Subscriber Box
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden flex flex-col justify-between hover:border-emerald-500/50 transition-all">
+          <div class="p-6">
+            <span class="inline-block px-3 py-1 rounded-full bg-slate-700 text-slate-300 font-semibold text-xs mb-4">Trial Special</span>
+            <h3 class="text-2xl font-bold text-white mb-2">₹1 Trial Pack (3 Sachets)</h3>
+            <p class="text-slate-400 text-sm mb-6">Try 3 sachets for ₹1. Standard ₹29 shipping charged at checkout.</p>
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="text-4xl font-extrabold text-white">₹1</span>
+              <span class="text-xs text-slate-400">+ ₹29 shipping</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 3x Trial sachets</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Instant Dissolve Formula</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Limit 1 trial per customer</li>
+            </ul>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="showNotAvailableModal('₹1 Trial Pack (3 Sachets)')" class="w-full py-3 rounded-xl bg-slate-700 hover:bg-slate-600 text-white font-bold text-sm transition-all">
+              Claim ₹1 Trial
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Notice Modal -->
+  <div id="notice-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 max-w-md w-full rounded-2xl border border-slate-700 p-6 shadow-2xl relative">
+      <button onclick="closeNoticeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+
+      <div class="w-12 h-12 rounded-full bg-emerald-950 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-xl mb-4">
+        <i class="fa-solid fa-seedling"></i>
+      </div>
+
+      <h3 class="text-xl font-bold text-white mb-2">MicroBloom Concept Announcement</h3>
+      <p class="text-slate-300 text-sm leading-relaxed mb-4">
+        Thank you for your interest! <span id="modal-product-name" class="text-emerald-400 font-semibold">This product</span> is currently a concept and not yet an actual commercial product available for sale.
+      </p>
+      
+      <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 mb-6 text-xs text-slate-300">
+        <p class="font-semibold text-emerald-400 mb-1">Interested in making MicroBloom a reality?</p>
+        <p>If interested, show your feelings by reaching out to us at:</p>
+        <a href="mailto:chowdhryshivan@gmail.com" class="inline-flex items-center gap-2 text-white font-bold mt-2 bg-emerald-600/30 px-3 py-1.5 rounded-lg border border-emerald-500/40 hover:bg-emerald-600/50 transition-all">
+          <i class="fa-solid fa-envelope text-emerald-400"></i>
+          chowdhryshivan@gmail.com
+        </a>
+      </div>
+
+      <button onclick="closeNoticeModal()" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all shadow-lg">
+        Got It, Thanks!
+      </button>
+    </div>
+  </div>
+
+  <div id="cart-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex justify-end">
+    <div class="bg-slate-900 w-full max-w-md h-full p-6 border-l border-slate-800 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+          <h3 class="text-xl font-bold text-white">Your Shopping Cart</h3>
+          <button onclick="toggleCart()" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
+        </div>
+        <div id="cart-items" class="space-y-4 max-h-[60vh] overflow-y-auto">
+          <p class="text-slate-400 text-sm text-center py-8">Your cart is currently empty.</p>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-800 pt-4">
+        <div class="flex justify-between text-base font-bold text-white mb-4">
+          <span>Subtotal</span>
+          <span id="cart-total">₹0</span>
+        </div>
+        <button onclick="checkout()" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all shadow-lg">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-slate-950 border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left sm:flex sm:justify-between sm:items-center">
+      <div class="mb-6 sm:mb-0">
+        <div class="flex items-center justify-center sm:justify-start gap-3 mb-2">
+          <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center text-white">
+            <i class="fa-solid fa-leaf text-sm"></i>
+          </div>
+          <span class="text-lg font-bold text-white">MicroBloom</span>
+        </div>
+        <p class="text-xs text-slate-500">Urban D2C Agri-Tech Startup • Single-Dose Precision Plant Care</p>
+      </div>
+
+      <p class="text-xs text-slate-500">© 2026 MicroBloom Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    let cart = [];
+
+    const plantSlider = document.getElementById('plant-count');
+    const plantCountVal = document.getElementById('plant-count-val');
+    const feedFreq = document.getElementById('feed-freq');
+    const sachetNeeds = document.getElementById('sachet-needs');
+    const boxDuration = document.getElementById('box-duration');
+
+    function updateCalculator() {
+      const count = parseInt(plantSlider.value);
+      const freqDays = parseInt(feedFreq.value);
+      plantCountVal.innerText = `${count} Plant${count > 1 ? 's' : ''}`;
+
+      // Average 1 sachet feeds 2-3 potted plants per watering cycle
+      const sachetsPerFeeding = Math.ceil(count / 2.5);
+      const feedingsPerMonth = 30 / freqDays;
+      const totalMonthlySachets = Math.round(sachetsPerFeeding * feedingsPerMonth);
+
+      sachetNeeds.innerHTML = `${totalMonthlySachets} Sachet${totalMonthlySachets > 1 ? 's' : ''} <span class="text-lg font-normal text-slate-400">/ mo</span>`;
+      
+      const durationMonths = (10 / totalMonthlySachets).toFixed(1);
+      boxDuration.innerText = `${durationMonths} month${durationMonths > 1 ? 's' : ''}`;
+    }
+
+    plantSlider.addEventListener('input', updateCalculator);
+    feedFreq.addEventListener('change', updateCalculator);
+    updateCalculator();
+
+    function showNotAvailableModal(productName) {
+      document.getElementById('modal-product-name').innerText = productName || 'This product';
+      document.getElementById('notice-modal').classList.remove('hidden');
+    }
+
+    function closeNoticeModal() {
+      document.getElementById('notice-modal').classList.add('hidden');
+    }
+
+    function addToCart(name, price) {
+      showNotAvailableModal(name);
+    }
+
+    function addBundleToCart() {
+      showNotAvailableModal('Subscriber Box (25 Sachets)');
+    }
+
+    function renderCart() {
+      const countEl = document.getElementById('cart-count');
+      const itemsEl = document.getElementById('cart-items');
+      const totalEl = document.getElementById('cart-total');
+
+      countEl.innerText = cart.length;
+
+      if (cart.length === 0) {
+        itemsEl.innerHTML = '<p class="text-slate-400 text-sm text-center py-8">Your cart is currently empty.</p>';
+        totalEl.innerText = '₹0';
+        return;
+      }
+
+      let total = 0;
+      itemsEl.innerHTML = cart.map((item, index) => {
+        total += item.price;
+        return `
+          <div class="flex items-center justify-between p-3 rounded-xl bg-slate-800 border border-slate-700">
+            <div>
+              <p class="text-sm font-semibold text-white">${item.name}</p>
+              <p class="text-xs text-emerald-400 font-bold">₹${item.price}</p>
+            </div>
+            <button onclick="removeFromCart(${index})" class="text-slate-500 hover:text-red-400 text-xs"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        `;
+      }).join('');
+
+      totalEl.innerText = `₹${total}`;
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      renderCart();
+    }
+
+    function toggleCart(forceOpen = false) {
+      const modal = document.getElementById('cart-modal');
+      if (forceOpen) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.toggle('hidden');
+      }
+    }
+
+    document.getElementById('cart-btn').addEventListener('click', () => toggleCart());
+
+    function checkout() {
+      if (cart.length === 0) return;
+      alert('Demo Checkout Successful! Welcome to MicroBloom.');
+      cart = [];
+      renderCart();
+      toggleCart();
+    }
+  </script>
+</body>
+</html>
